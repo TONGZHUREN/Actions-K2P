@@ -25,4 +25,4 @@ echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 
 #git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
 #git clone https://github.com/tracemouse/luci-theme-netgear package/molun/luci-theme-netgear
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang 
+#git clone https://github.com/kenzok8/golang feeds/packages/lang/golang 
