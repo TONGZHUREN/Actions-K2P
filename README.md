@@ -1,4 +1,3 @@
-**English** | 中文
 
 # Actions-OpenWrt
 
@@ -26,10 +25,5 @@ Main features:
 - vernesong
 - ...
 
-## Example Image
-
-![image](https://user-images.githubusercontent.com/59961153/232178875-3bff84ef-2740-4607-a788-9acc5e8321e5.png)
 
 
-## Join Group
-- .[点击加入"Openwrt_Share Group"群](https://t.me/openwrt_lede_v2ray_plugin)
