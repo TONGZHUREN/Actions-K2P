@@ -91,7 +91,14 @@ jobs:
        #清空缓存
        #clean:  'false'  # 'false' 默认值
        #prefix: ${{ github.workspace }}/openwrt
-       
+
+    - name: delete feeds
+      run: |
+        cd openwrt
+        rm -rf feeds/packages/utils/v2dat
+        rm -rf feeds/luci/applications/luci-app-mosdns
+
+        
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
