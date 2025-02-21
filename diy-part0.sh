@@ -26,13 +26,13 @@ echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 
 #git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
 #git clone https://github.com/tracemouse/luci-theme-netgear package/molun/luci-theme-netgear
-#git clone https://github.com/kenzok8/golang feeds/packages/lang/golang 
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang 
 
 # 删除软件包
 #rm -rf package/lean/luci-theme-argon
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
-rm -rf feeds/luci/applications/luci-app-mosdns
-rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray,v2ray,sing,smartdns}
-rm -rf feeds/packages/utils/v2dat
-rm -rf feeds/packages/lang/golang
-#rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+#rm -rf feeds/luci/applications/luci-app-mosdns
+#rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray,v2ray,sing,smartdns}
+#rm -rf feeds/packages/utils/v2dat
+#rm -rf feeds/packages/lang/golang
+
