@@ -99,14 +99,13 @@ jobs:
     #- name: luci-app-romupdate
       #run: |
        # cd openwrt/package    
-        #git clone -b dev https://github.com/Blueplanet20120/luci-app-romupdate.git
+       #git clone -b dev https://github.com/Blueplanet20120/luci-app-romupdate.git
     
     - name: golang
       run: |
         cd openwrt
-        rm -rf feeds/packages/lang/golang 
-        #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-        
+        rm -rf feeds/packages/lang/golang
+            
     #- name: aliyundrive-webdav
       #run: |
         #cd openwrt/package 
@@ -124,10 +123,17 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
-   
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
+
+    - name: delete feeds
+      run: |
+        cd openwrt
+        rm -rf feeds/luci/applications/luci-app-mosdns
+        rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray,v2ray,sing,smartdns}
+        rm -rf feeds/packages/utils/v2dat
+      
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
