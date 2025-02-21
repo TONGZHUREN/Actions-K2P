@@ -103,19 +103,19 @@ jobs:
     
     - name: golang
       run: |
-        #cd openwrt
-       # rm -rf feeds/packages/lang/golang 
-       # #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
+        cd openwrt
+        rm -rf feeds/packages/lang/golang 
+        #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
         
-    - name: aliyundrive-webdav
-      run: |
-        cd openwrt/package 
-        git clone https://github.com/messense/aliyundrive-webdav.git
+    #- name: aliyundrive-webdav
+      #run: |
+        #cd openwrt/package 
+        #git clone https://github.com/messense/aliyundrive-webdav.git
        
-    - name: luci-app-frpc
-      run: |
-        cd openwrt/package 
-        git clone https://github.com/kuoruan/luci-app-frpc.git
+    #- name: luci-app-frpc
+      #run: |
+        #cd openwrt/package 
+        #git clone https://github.com/kuoruan/luci-app-frpc.git
         
     - name: Load custom feeds
       run: |
