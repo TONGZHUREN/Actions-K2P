@@ -127,10 +127,10 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
 
 
-    - name: delete feeds
-      run: |
-        cd openwrt
-        #rm -rf feeds/luci/applications/luci-app-mosdns
+    #- name: delete feeds
+      #run: |
+        #cd openwrt
+        ##rm -rf feeds/luci/applications/luci-app-mosdns
         #rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray,v2ray,sing,smartdns}
         #rm -rf feeds/packages/utils/v2dat
       
