@@ -58,8 +58,8 @@ sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/w
 #git clone https://github.com/jerrykuku/luci-app-argon-config package/molun/luci-app-argon-config
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/molun/luci-theme-infinityfreedom
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
-git clone https://github.com/tracemouse/luci-theme-netgear package/molun/luci-theme-netgear
+#git clone https://github.com/thinktip/luci-theme-neobird package/molun/luci-theme-neobird
+#git clone https://github.com/tracemouse/luci-theme-netgear package/molun/luci-theme-netgear
 
 # 删除软件包
 #rm -rf package/lean/luci-theme-argon
