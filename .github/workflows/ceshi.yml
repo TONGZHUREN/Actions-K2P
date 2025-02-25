@@ -98,9 +98,7 @@ jobs:
     
     - name: luci-app-neobird
       run: |
-        cd openwrt
-        mkdir package/tong/luci-theme-neobird 
-        cd package/tong/luci-theme-neobird 
+        cd openwrt/package/lean 
         git clone https://github.com/thinktip/luci-theme-neobird 
     
     #- name: golang
